@@ -10,16 +10,23 @@ sudo pacman -S --needed $(grep -v '^#' "$DOTFILES/packages.txt")
 echo "Setting zsh..."
 chsh -s "$(which zsh)"
 
-echo "Removing existing configs..."
-rm -rf ~/.zshrc
-rm -rf ~/.config/kitty
-rm -rf ~/.config/niri
-rm -f ~/.config/starship.toml
+echo "Backing up existing configs..."
+
+BACKUP="$HOME/.config-backup"
+mkdir -p "$BACKUP"
+
+[ -e "$HOME/.zshrc" ] && mv "$HOME/.zshrc" "$BACKUP/"
+[ -d "$HOME/.config/kitty" ] && mv "$HOME/.config/kitty" "$BACKUP/"
+[ -d "$HOME/.config/niri" ] && mv "$HOME/.config/niri" "$BACKUP/"
+[ -f "$HOME/.config/starship.toml" ] && mv "$HOME/.config/starship.toml" "$BACKUP/"
 
 echo "Deploying dotfiles..."
+
 cd "$DOTFILES"
 
 stow zsh
 stow config
 
-echo "Done! Restart your session."
+echo "Done!"
+echo "Backup saved in $BACKUP"
+echo "Restart your session."
