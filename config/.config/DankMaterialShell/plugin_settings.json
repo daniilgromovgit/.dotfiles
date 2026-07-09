@@ -1,0 +1,18 @@
+{
+  "dockerManager": {
+    "enabled": true
+  },
+  "ipIndicator": {
+    "enabled": true
+  },
+  "dankPomodoroTimer": {
+    "enabled": true
+  },
+  "usbManager": {
+    "enabled": true
+  },
+  "vscodeLauncher": {
+    "enabled": true,
+    "editorMode": "VSCode"
+  }
+}
