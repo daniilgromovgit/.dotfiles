@@ -8,9 +8,6 @@ starship
 # Dotfiles manager
 stow
 
-# Terminal
-kitty
-
 # Fonts (для starship/иконок)
 ttf-jetbrains-mono-nerd
 noto-fonts

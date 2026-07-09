@@ -14,11 +14,12 @@ echo "Backing up existing configs..."
 
 BACKUP="$HOME/.config-backup"
 mkdir -p "$BACKUP"
+mkdir -p "$HOME/.config"
 
 [ -e "$HOME/.zshrc" ] && mv "$HOME/.zshrc" "$BACKUP/"
-[ -d "$HOME/.config/kitty" ] && mv "$HOME/.config/kitty" "$BACKUP/"
 [ -d "$HOME/.config/niri" ] && mv "$HOME/.config/niri" "$BACKUP/"
 [ -f "$HOME/.config/starship.toml" ] && mv "$HOME/.config/starship.toml" "$BACKUP/"
+[ -d "$HOME/.config/DankMaterialShell" ] && mv "$HOME/.config/DankMaterialShell" "$BACKUP/"
 
 echo "Deploying dotfiles..."
 
