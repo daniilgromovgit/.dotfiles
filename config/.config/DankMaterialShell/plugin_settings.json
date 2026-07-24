@@ -14,5 +14,9 @@
   "vscodeLauncher": {
     "enabled": true,
     "editorMode": "VSCode"
+  },
+  "dankKDEConnect": {
+    "enabled": true,
+    "selectedDeviceId": "1828c54a0d5e4da7902052350909dee5"
   }
 }
