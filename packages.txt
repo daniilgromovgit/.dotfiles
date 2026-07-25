@@ -1,14 +1,26 @@
-# Git
+# Git & Dev Tools
 git
+git-delta             # Красивые diffs для git в терминале
 
-# Shell
+# Shell & Prompt
 zsh
+zsh-autosuggestions     # Автодополнение серым текстом из истории
+zsh-syntax-highlighting # Подсветка команд (зеленый/красный)
 starship
+
+# Python Tools
+pyenv                 # Менеджер версий Python
+ruff                  # Быстрый linter & formatter для Python
+
+# Modern CLI Replacements (из вашего .zshrc)
+eza                   # Прокачанный ls с иконками
+bat                   # Прокачанный cat с подсветкой синтаксиса
+ripgrep               # Быстрый поиск по файлам (нужен для Todo-Tree)
 
 # Dotfiles manager
 stow
 
-# Fonts (для starship/иконок)
+# Fonts
 ttf-jetbrains-mono-nerd
 noto-fonts
 noto-fonts-emoji
