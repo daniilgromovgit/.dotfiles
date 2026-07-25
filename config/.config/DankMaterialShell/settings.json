@@ -1,7 +1,7 @@
 {
   "currentThemeName": "custom",
   "currentThemeCategory": "registry",
-  "customThemeFile": "/home/xyz/.config/DankMaterialShell/themes/dankViolet/theme.json",
+  "customThemeFile": "/home/xyz/.config/DankMaterialShell/themes/creamySchedule/theme.json",
   "registryThemeVariants": {},
   "matugenScheme": "scheme-tonal-spot",
   "matugenContrast": 0,
@@ -591,18 +591,6 @@
           "id": "diskUsage",
           "enabled": true,
           "mountPath": "/"
-        },
-        {
-          "id": "ipIndicator",
-          "enabled": true
-        },
-        {
-          "id": "usbManager",
-          "enabled": true
-        },
-        {
-          "id": "dockerManager",
-          "enabled": true
         }
       ],
       "centerWidgets": [
@@ -612,11 +600,11 @@
           "mediaSize": 0
         },
         {
-          "id": "dankPomodoroTimer",
+          "id": "ipIndicator",
           "enabled": true
         },
         {
-          "id": "dankKDEConnect",
+          "id": "dockerManager",
           "enabled": true
         }
       ],

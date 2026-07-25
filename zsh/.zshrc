@@ -7,10 +7,12 @@ setopt SHARE_HISTORY HIST_IGNORE_DUPS HIST_IGNORE_SPACE
 # Автодополнение (как в fish)
 autoload -Uz compinit && compinit
 
-# Настройка pyenv
+# Настройка pyenv (Универсальная для Arch Linux и ручной установки)
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if command -v pyenv &>/dev/null; then
+    eval "$(pyenv init -)"
+fi
 
 # Промпт
 eval "$(starship init zsh)"

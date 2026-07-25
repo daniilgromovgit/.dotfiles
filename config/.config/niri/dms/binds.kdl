@@ -26,7 +26,7 @@ binds {
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
     Mod+E hotkey-overlay-title="Open Files" { spawn "nautilus"; }
-    Mod+B hotkey-overlay-title="Open Browser" { spawn "zen-browser"; }
+    Mod+B hotkey-overlay-title="Open Browser" { spawn "vivaldi"; }
     Mod+Z hotkey-overlay-title="Open Telegram" { spawn "Telegram"; }
     Mod+S hotkey-overlay-title="Open VSCode" { spawn "code"; }
     Mod+A hotkey-overlay-title="Open OBS" { spawn "obs"; }
